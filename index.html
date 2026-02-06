@@ -1,0 +1,140 @@
+  <!DOCTYPE html>
+  <html lang="vi">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trà Sữa Nhà Làm</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <span>📞 0123 456 789</span>
+    <span>📧 trasua@nhalam.vn</span>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">🥤 Trà Sữa Nhà Làm</div>
+    <nav class="nav">
+      <a href="story.html">Câu chuyện</a>
+      <a href="#products">Sản phẩm</a>
+      <a href="#cart">Giỏ hàng</a>
+      <a href="#contact">Liên hệ</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Trà sữa của ký ức & cảm xúc</h1>
+      <p>Nguyên liệu sạch – Công thức thủ công – Vị ngọt gần gũi</p>
+      <button>Mua ngay</button>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <h2>Câu chuyện thương hiệu</h2>
+    <p>
+      Chúng tôi tin rằng một ly trà sữa ngon không chỉ đến từ công thức,
+      mà còn đến từ cảm xúc của người pha và người uống.
+    </p>
+  </section>
+
+  <!-- PRODUCTS -->
+  <!-- PRODUCTS SECTION -->
+  <section id="products" class="products-section">
+    <div class="section-header">
+      <h2>Sản phẩm nổi bật</h2>
+      <p>Chọn hương vị bạn yêu – chúng tôi pha bằng cả tâm huyết</p>
+    </div>
+
+    <div class="products-grid" id="productsGrid">
+      <!-- Sản phẩm sẽ được JS render ở đây -->
+    </div>
+  </section>
+
+
+  <!-- FEATURES -->
+  <section class="features">
+    <div class="feature">🌱 Nguyên liệu tự nhiên</div>
+    <div class="feature">🥛 Sữa tươi mỗi ngày</div>
+    <div class="feature">⚡ Phục vụ nhanh</div>
+    <div class="feature">❤️ Hương vị ký ức</div>
+  </section>
+
+  <!-- CART -->
+  <section id="cart" class="cart-section">
+    <h2>🛒 Giỏ hàng của bạn</h2>
+
+    <div class="cart-wrapper">
+      <table class="cart-table">
+        <thead>
+          <tr>
+            <th>Sản phẩm</th>
+            <th>Giá</th>
+            <th>Số lượng</th>
+            <th>Tạm tính</th>
+            <th>Xóa</th>
+          </tr>
+        </thead>
+        <tbody id="cartItems">
+          <!-- JS render -->
+        </tbody>
+      </table>
+
+      <div class="cart-summary">
+        <p>
+          Tổng tiền:
+          <span id="cartTotal">0đ</span>
+        </p>
+        <button class="btn-checkout">Thanh toán</button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="contact-info">
+      <h2>Liên hệ</h2>
+      <p>📍 123 Nguyễn Trà Sữa, TP.HCM</p>
+      <p>📞 0123 456 789</p>
+      <p>📧 trasua@nhalam.vn</p>
+    </div>
+
+    <iframe
+      src="https://www.google.com/maps?q=ho%20chi%20minh&output=embed">
+    </iframe>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    © 2026 Trà Sữa Nhà Làm – All rights reserved
+  </footer>
+  <!-- CHECKOUT MODAL -->
+<div class="checkout-modal" id="checkoutModal">
+  <div class="checkout-box">
+    <h3>💳 Xác nhận thanh toán</h3>
+    <p>Bạn có chắc muốn thanh toán đơn hàng này không?</p>
+
+    <p>
+      Tổng tiền:
+      <strong id="checkoutAmount">0đ</strong>
+    </p>
+
+    <button class="btn-confirm" onclick="confirmCheckout()">
+      Xác nhận
+    </button>
+    <button class="btn-cancel" onclick="closeCheckout()">
+      Hủy
+    </button>
+  </div>
+</div>
+
+
+  <script src="script.js"></script>
+  </body>
+  </html>
